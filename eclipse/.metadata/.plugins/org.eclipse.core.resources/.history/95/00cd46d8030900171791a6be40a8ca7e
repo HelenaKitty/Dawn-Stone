@@ -1,0 +1,93 @@
+package design.myown.newDecorItems;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemStack;
+
+@Mod(modid = "dsnewitems", name = "New Decoration Items", version = "1.0")
+public class newDecorItems {
+	
+	//blocks
+	public static Block dawnStoneOreBlue;
+	public static Block dawnStoneBlue;
+	public static Block dawnStoneOreCyan;
+	public static Block dawnStoneCyan;
+	public static Block dawnStoneOreLime;
+	public static Block dawnStoneLime;
+	public static Block dawnStoneOreMagenta;
+	public static Block dawnStoneMagenta;
+	
+	public static Block dawnStoneWarningZone;
+	
+	public static Block dawnStoneBlueLamp;
+	public static Block dawnStoneGreenLamp;
+	public static Block dawnStoneRedLamp;
+	
+	public static Block dawnStonePink;
+
+	//items weapons
+	
+	public static Item dawnStoneMagentaSword;
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event){
+		
+		//blocks 
+		dawnStoneOreBlue = new DawnStoneOreBlue(Material.rock).setBlockName("DawnStoneOreBlue").setBlockTextureName("dsnewitems:OreBlue");
+		GameRegistry.registerBlock(dawnStoneOreBlue, dawnStoneOreBlue.getUnlocalizedName().substring(5));
+		dawnStoneBlue = new DawnStoneBlue(Material.rock).setBlockName("DawnStoneBlue").setBlockTextureName("dsnewitems:StoneBlue");
+		GameRegistry.registerBlock(dawnStoneBlue, dawnStoneBlue.getUnlocalizedName().substring(5));
+		dawnStoneOreCyan = new DawnStoneOreCyan(Material.rock).setBlockName("DawnStoneOreCyan").setBlockTextureName("dsnewitems:OreCyan");
+		GameRegistry.registerBlock(dawnStoneOreCyan, dawnStoneOreCyan.getUnlocalizedName().substring(5));
+		dawnStoneCyan = new DawnStoneCyan(Material.rock).setBlockName("DawnStoneCyan").setBlockTextureName("dsnewitems:StoneCyan");
+		GameRegistry.registerBlock(dawnStoneCyan, dawnStoneCyan.getUnlocalizedName().substring(5));
+		dawnStoneOreMagenta = new DawnStoneOreMagenta(Material.rock).setBlockName("DawnStoneOreMagenta").setBlockTextureName("dsnewitems:OreMagenta");
+		GameRegistry.registerBlock(dawnStoneOreMagenta, dawnStoneOreMagenta.getUnlocalizedName().substring(5));
+		dawnStoneMagenta = new DawnStoneMagenta(Material.rock).setBlockName("DawnStoneMagenta").setBlockTextureName("dsnewitems:StoneMagenta");
+		GameRegistry.registerBlock(dawnStoneMagenta, dawnStoneMagenta.getUnlocalizedName().substring(5));
+		dawnStoneOreLime = new DawnStoneOreLime(Material.rock).setBlockName("DawnStoneOreLime").setBlockTextureName("dsnewitems:OreLime");
+		GameRegistry.registerBlock(dawnStoneOreLime, dawnStoneOreLime.getUnlocalizedName().substring(5));
+		dawnStoneLime = new DawnStoneLime(Material.rock).setBlockName("DawnStoneLime").setBlockTextureName("dsnewitems:StoneLime");
+		GameRegistry.registerBlock(dawnStoneLime, dawnStoneLime.getUnlocalizedName().substring(5));
+		
+		dawnStoneBlueLamp = new DawnStoneBlueLamp(Material.rock).setBlockName("DawnStoneBlueLamp").setBlockTextureName("dsnewitems:bluelamp");
+		GameRegistry.registerBlock(dawnStoneBlueLamp, dawnStoneBlueLamp.getUnlocalizedName().substring(5));
+		dawnStoneRedLamp = new DawnStoneRedLamp(Material.rock).setBlockName("DawnStoneRedLamp").setBlockTextureName("dsnewitems:redlamp");
+		GameRegistry.registerBlock(dawnStoneBlueLamp, dawnStoneBlueLamp.getUnlocalizedName().substring(5));
+		dawnStoneGreenLamp = new DawnStoneGreenLamp(Material.rock).setBlockName("DawnStoneGreenLamp").setBlockTextureName("dsnewitems:greenlamp");
+		GameRegistry.registerBlock(dawnStoneGreenLamp, dawnStoneGreenLamp.getUnlocalizedName().substring(5));
+		
+		
+		
+		dawnStoneWarningZone = new DawnStoneWarningZone(Material.rock).setBlockName("DawnStoneWarningZone").setBlockTextureName("dsnewitems:WarningBlock");
+		GameRegistry.registerBlock(dawnStoneWarningZone, dawnStoneWarningZone.getUnlocalizedName().substring(5));
+		
+		//items weapons
+		dawnStoneMagentaSword = new DawnStoneMagentaSword().setUnlocalizedName("DawnStoneMagentaSword").setTextureName("dsnewitems:DawnStoneMagentaSword");
+		GameRegistry.registerItem(dawnStoneMagentaSword, dawnStoneMagentaSword.getUnlocalizedName().substring(5));
+		
+	}
+	
+	@EventHandler
+	public void init(FMLInitializationEvent event){
+		
+		
+	}
+	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event){
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+tile.DawnStonePink.name=Dawn Stone Pink
+tile.DawnStoneOreBlue.name=Dawn Stone Blue Ore
+tile.DawnStoneBlue.name=Dawn Stone Blue
+tile.DawnStoneOreCyan.name=Dawn Stone Cyan Ore
+tile.DawnStoneCyan.name=Dawn Stone Cyan 
+tile.DawnStoneOreLime.name=Dawn Stone Lime Ore
+tile.DawnStoneLime.name=Dawn Stone Lime
+tile.DawnStoneOreMagenta.name=Dawn Stone Magenta Ore
+tile.DawnStoneMagenta.name=Dawn Stone Magenta
+tile.DawnStoneOreYellow.name=Dawn Stone Yellow Ore
+tile.DawnStoneYellow.name=Dawn Stone Yellow
+tile.DawnStoneOreRed.name=Dawn Stone Red Ore
+tile.DawnStoneRed.name=Dawn Stone Red
+
+tile.DawnStoneBlueLamp.name=Dawn Stone Blue Lamp
+tile.DawnStoneRedLamp.name=Dawn Stone Red Lamp
+tile.DawnStoneGreenLamp.name=Dawn Stone Green Lamp
+
+tile.DawnStoneWarningZone.name=Dawn Stone Warning Zone
+
+
+item.DawnStoneMagentaSword.name=Dawn Stone Magenta Sword
+item.DawnStoneGreenCrystals.name=Dawn Stone Green Crystals
+
+itemGroup.tabdsnewitems=Dawn Stone

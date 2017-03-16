@@ -1,0 +1,12 @@
+package design.myown.newDecorItems;
+
+import net.minecraft.item.Item;
+
+public class DawnStoneMagentaSword extends ItemSword{
+	public DawnStoneMagentaSword(){
+		
+		this.setFull3D();
+		
+	}
+	
+}

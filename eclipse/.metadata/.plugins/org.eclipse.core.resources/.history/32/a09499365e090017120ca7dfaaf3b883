@@ -1,0 +1,11 @@
+package design.myown.newDecorItems;
+
+import net.minecraft.item.Item;
+
+public class DawnStoneGreenCrystals {
+	public DawnStoneGreenCrystals(){
+		this.setFull3D();
+		
+	}
+	
+}
